@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.dkexception.palminpalm.feature.chat'
+
+    defaultConfig {
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+apply plugin: CoreDependenciesPlugin
+apply plugin: ComposeBOMDependenciesPlugin
+apply plugin: HiltDependenciesPlugin
+apply plugin: TestingDependencies
+
+dependencies {
+    implementation project(":core:network")
+    implementation project(":core:common")
+}
