@@ -2,7 +2,6 @@
 
 package com.dkexception.palminpalm.feature.dashboard
 
-import android.content.Intent
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -19,7 +18,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -29,7 +27,6 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.dkexception.palminpalm.feature.chat.presentation.standalone.ChatActivity
 import com.dkexception.palminpalm.feature.dashboard.navigation.DashboardNavGraph
 import com.dkexception.palminpalm.feature.dashboard.navigation.DashboardTabs
 
@@ -42,8 +39,6 @@ internal fun DashboardScreen(
 
     val bottomTabsController: NavHostController = rememberNavController()
     updateNavController?.invoke(bottomTabsController)
-
-    val context = LocalContext.current
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),

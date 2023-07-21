@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Chat" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.PaLMInPalm" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">#4D000000</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
