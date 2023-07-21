@@ -1,3 +1,5 @@
+[![Android CI](https://github.com/dkexception/PaLM-in-palm/actions/workflows/android.yml/badge.svg)](https://github.com/dkexception/PaLM-in-palm/actions/workflows/android.yml)
+
 # PaLM in palm
 PaLM (Pathways Language Model) APIs are set of APIs offered by Google wrt their research in responsible AI and overall cognitive sciences.
 
