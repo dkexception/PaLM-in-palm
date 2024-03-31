@@ -9,10 +9,14 @@ android {
     namespace 'com.dkexception.palminpalm.core.network'
 
     defaultConfig {
+
         consumerProguardFiles "consumer-rules.pro"
 
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+
         buildConfigField "String", "palmApiBaseUrl", "${palmApiBaseUrl}"
-        buildConfigField "String", "palmApiKey", "${palmApiKey}"
+        buildConfigField "String", "palmApiKey", "${properties.getProperty("palmApiKey", "")}"
     }
 
     buildTypes {

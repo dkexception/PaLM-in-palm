@@ -9,8 +9,8 @@ This App allows us to chat with a responsible AI agent, and offers overall view 
 This app showcases multi-module MVI architecture with Jetpack libraries; UI being fully made with Jetpack Compose.
 
 # Build steps
-1. Get the API key from [Makersuit](https://makersuite.google.com/)
-2. Put that key in `gradle.properties` file as: `palmApiKey="<YOUR TOKEN HERE>"`
+1. Get the API key from [Google's AI Studio](https://aistudio.google.com/app/apikey)
+2. Put that key in `local.properties` file as: `palmApiKey="<YOUR TOKEN HERE>"`
 3. Build and run the app as usual
 
 # Screenshots
